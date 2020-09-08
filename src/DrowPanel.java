@@ -7,10 +7,10 @@ public class DrowPanel extends JPanel {
 
     @Override
     public void paint(Graphics g) {
-        Graphics2D gr = (Graphics2D) g.create();
+        super.paint(g);
         //drawSun(gr, 300, 300, 50, 100, 100, Color.ORANGE);
-        drawHouse(gr, 300, 300, 10000, Color.BLACK);
-
+        House house = new House((Graphics2D) g,400,650,140,140);
+        house.draw((Graphics2D) g);
     }
 
     public static void drawSun(Graphics g, int x, int y, int r, int R, int n, Color c){
