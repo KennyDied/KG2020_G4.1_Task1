@@ -38,7 +38,7 @@ public class House implements Drawable {
 
         g.setColor(Color.BLACK);
         g.setStroke(new BasicStroke(5.0f));
-        
+
         g.drawLine(windX, windY,windX + windWidth, windY);
         g.drawLine(windX, windY, windX, windY +  height / 2);
         g.drawLine(windX, windY +  height / 2, windX + windWidth, windY +  height / 2);
@@ -97,10 +97,15 @@ public class House implements Drawable {
 
     @Override
     public void draw(Graphics2D g) {
-        drawBodyOfHouse(g, height,width,x,y);
-        drawWindow(g, height,width,x,y);
-        drawDoor(g, height,width,x,y);
-        drawChimney(g, height, width,x,y);
-        drawRoof(g, height, width, x, y);
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
+        g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
+
+        drawBodyOfHouse(g2d, height,width,x,y);
+        drawWindow(g2d, height,width,x,y);
+        drawDoor(g2d, height,width,x,y);
+        drawChimney(g2d, height, width,x,y);
+        drawRoof(g2d, height, width, x, y);
     }
 }
