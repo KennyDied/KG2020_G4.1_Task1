@@ -1,6 +1,4 @@
-import javax.swing.plaf.ColorUIResource;
 import java.awt.*;
-import java.util.Random;
 
 public class House implements Drawable {
     Graphics2D g;
@@ -17,7 +15,7 @@ public class House implements Drawable {
         this.y = y;
     }
 
-    private static void drawBodyOfHouse(Graphics2D g, int height, int width, int x, int y){
+    private void drawBodyOfHouse(Graphics2D g, int height, int width, int x, int y){
         g.setColor(Color.DARK_GRAY);
         g.fillRect(x, y, width, height);
 
@@ -28,7 +26,7 @@ public class House implements Drawable {
         g.drawLine(x, y + height, x + width, y + height);
     }
 
-    private static void drawWindow(Graphics2D g, int height, int width, int x, int y){
+    private void drawWindow(Graphics2D g, int height, int width, int x, int y){
         g.setColor(Color.CYAN);
         int windX = x + width / 6;
         int windY = y + height / 6;
@@ -47,7 +45,7 @@ public class House implements Drawable {
         g.drawLine(windX, y + height / 3, windX + windWidth, y + height / 3  );
     }
 
-    private static void drawDoor(Graphics2D g, int height, int width, int x, int y){
+    private void drawDoor(Graphics2D g, int height, int width, int x, int y){
         g.setColor(Color.PINK);
         g.setStroke(new BasicStroke(5.0f));
         int doorX = x + width / 2 + width / 8;
@@ -67,7 +65,7 @@ public class House implements Drawable {
         g.drawOval(doorX + doorWidth / 8, doorY + doorHeight / 2, doorWidth / 8,doorWidth / 8);
     }
 
-    private static void drawChimney(Graphics2D g, int height, int width, int x, int y){
+    private void drawChimney(Graphics2D g, int height, int width, int x, int y){
         g.setColor(Color.ORANGE);
         g.fillRect(x + 3 * width / 4, y - height / 4, width / 6, height / 4);
 
@@ -76,7 +74,7 @@ public class House implements Drawable {
         g.drawRect(x + 3 * width / 4, y - height / 4, width / 6, height / 4);
     }
 
-    private static void drawRoof(Graphics2D g, int height, int width, int x, int y){
+    private void drawRoof(Graphics2D g, int height, int width, int x, int y){
         g.setColor(Color.PINK);
         g.setStroke(new BasicStroke(5.0f));
         int ax = x + width / 2;
@@ -97,15 +95,10 @@ public class House implements Drawable {
 
     @Override
     public void draw(Graphics2D g) {
-        Graphics2D g2d = (Graphics2D) g;
-        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
-        g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
-
-        drawBodyOfHouse(g2d, height,width,x,y);
-        drawWindow(g2d, height,width,x,y);
-        drawDoor(g2d, height,width,x,y);
-        drawChimney(g2d, height, width,x,y);
-        drawRoof(g2d, height, width, x, y);
+        drawBodyOfHouse(g, height,width,x,y);
+        drawWindow(g, height,width,x,y);
+        drawDoor(g, height,width,x,y);
+        drawChimney(g, height, width,x,y);
+        drawRoof(g, height, width, x, y);
     }
 }
