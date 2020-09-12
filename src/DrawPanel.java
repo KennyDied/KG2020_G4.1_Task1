@@ -13,13 +13,17 @@ public class DrawPanel extends JPanel {
         World world = new World((Graphics2D) g, getHeight(), getWidth());
         world.draw((Graphics2D) g);
 
-        House house = new House((Graphics2D) g,250,400,1200,400);
+        Tree tree = new Tree((Graphics2D) g, 10, getWidth(), getHeight());
+        tree.draw((Graphics2D) g);
+
+        House house = new House((Graphics2D) g,250,400,1200,600);
         house.draw((Graphics2D) g);
 
         Sun sun = new Sun((Graphics2D) g, 150, 150, 50, 150, 20, Color.ORANGE);
         sun.draw((Graphics2D) g);
 
-        Dog dog = new Dog((Graphics2D) g, 100, 250, 150, 600);
+        Dog dog = new Dog((Graphics2D) g, 100, 250, 150, 800);
         dog.draw((Graphics2D) g);
+
     }
 }

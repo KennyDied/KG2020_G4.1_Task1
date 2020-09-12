@@ -6,7 +6,6 @@ public class World implements Drawable{
     int width;
 
     public World(Graphics2D g, int height, int width) {
-        this.g = g;
         this.height = height;
         this.width = width;
     }
@@ -18,7 +17,7 @@ public class World implements Drawable{
 
     private void drawSky (Graphics g, int height, int width){
         g.setColor(new Color(0,214,255));
-        g.fillRect(0, 0, width, height / 2);
+        g.fillRect(0, 0, width, 7 * height / 10);
     }
 
     @Override
