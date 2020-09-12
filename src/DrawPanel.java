@@ -10,13 +10,13 @@ public class DrawPanel extends JPanel {
         g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
         g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
 
-        House house = new House((Graphics2D) g,250,400,1300,500);
+        House house = new House((Graphics2D) g,250,400,700,400);
         house.draw((Graphics2D) g);
 
         Sun sun = new Sun((Graphics2D) g, 150, 150, 50, 100, 20, Color.ORANGE);
         sun.draw((Graphics2D)g);
 
-        Dog dog = new Dog((Graphics2D) g, 400, 650, 140, 140);
+        Dog dog = new Dog((Graphics2D) g, 100, 250, 150, 500);
         dog.draw((Graphics2D) g);
 
 
