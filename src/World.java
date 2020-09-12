@@ -21,7 +21,6 @@ public class World implements Drawable{
         g.fillRect(0, 0, width, height / 2);
     }
 
-
     @Override
     public void draw(Graphics2D g) {
         drawGround(g, height, width);
