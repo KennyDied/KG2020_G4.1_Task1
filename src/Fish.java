@@ -26,13 +26,37 @@ public class Fish implements Drawable {
     }
 
     private void drawEyesOfFish(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.WHITE);
-        g.fillOval(x + width / 2, y + height / 3, width / 5, width / 5);
 
-        g.setColor(Color.BLACK);
-        g.drawOval(x + width / 2, y + height / 3, width / 5, width / 5);
-        g.fillOval(x + width / 2 + width / 14, y + height / 3, width / 7, width / 7);
+        if (width > 0){
+            g.setColor(Color.white);
+            g.fillOval(x + width / 2 - width / 10, y + height / 2 - width / 5, width / 5, width / 5);
+            g.setColor(Color.black);
+            g.drawOval(x + width / 2 - width / 10, y + height / 2 - width / 5, width / 5, width / 5);
+            g.fillOval(x + width / 2 - width / 10, y + height / 2 - width / 5, width / 8, width / 8);
+        } else {
+            g.setColor(Color.white);
+            g.fillOval(x + width / 2 + width / 10, y + height / 2 + width / 5, (-1) * width / 5, (-1) * width / 5);
+            g.setColor(Color.black);
+            g.drawOval(x + width / 2 + width / 10, y + height / 2 + width / 5, (-1) * width / 5, (-1) * width / 5);
+            g.fillOval(x + width / 2 + width / 10, y + height / 2 + width / 5, (-1) * width / 8, (-1) * width / 8);
+        }
+//        if (width > 0) {
+//            g.fillOval(x + width / 2, y + height / 3, width / 5, width / 5);
+//
+//            g.setColor(Color.BLACK);
+//            g.drawOval(x + width / 2, y + height / 3, width / 5, width / 5);
+//            g.fillOval(x + width / 2 + width / 14, y + height / 3, width / 7, width / 7);
+//        }
+//        else {
+//            g.setColor(Color.WHITE);
+//            g.fillOval(x + width / 2, y + height / 3, - width / 5, - width / 5);
+//
+//            g.setColor(Color.BLACK);
+//            g.drawOval(x + width / 2, y + height / 3, - width / 5, - width / 5);
+//            g.fillOval(x + width / 2 + width / 14, y + height / 3, - width / 7, - width / 7);
+//        }
     }
+
 
     @Override
     public void draw(Graphics2D g) {
