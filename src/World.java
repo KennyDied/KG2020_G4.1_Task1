@@ -1,7 +1,6 @@
 import java.awt.*;
 
 public class World implements Drawable{
-    Graphics2D g;
     int height;
     int width;
 

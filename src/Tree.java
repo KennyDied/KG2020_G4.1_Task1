@@ -20,17 +20,13 @@ public class Tree implements Drawable {
             int randomHighPosOfStump = (int)Math.floor((Math.random() * ((height / 2) - 65 * height / 100)) + 65 * height / 100);
             int randomLowPosOfStump = (int)Math.floor((Math.random() * ((3 * height / 4) - 7 * height / 10)) + 7 * height / 10);
 
-
-
             int randomLeavesColorR = (int)(Math.random() * 205);
             int randomLeavesColorG = 255;
             int randomLeavesColorB = (int)(Math.random() * 140);
 
-
             int randomStumpColorR = 255;
             int randomStumpColorG = (int)(Math.random() * 150);
             int randomStumpColorB = (int)(Math.random() * 1);
-
 
             g.setColor(new Color(randomStumpColorR, randomStumpColorG, randomStumpColorB));
             g.setStroke(new BasicStroke(randomWidthOfStump));

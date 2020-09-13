@@ -36,8 +36,6 @@ public class Dog implements Drawable {
         g.fillRect(x + 11 * width / 12, y + height / 6, width / 26, height / 26);
         g.fillRect(x + 11 * width / 14, y + height / 6, width / 26, height / 26);
 
-
-
     }
 
     private void drawMouthOfDog(Graphics2D g, int height, int width, int x, int y) {
@@ -67,7 +65,6 @@ public class Dog implements Drawable {
         g.setStroke(new BasicStroke(width / 50f));
         g.drawLine(x + 3 * width / 4, y + height / 12, x + 3 * width / 4, y + 5 * height / 12);
     }
-
 
     @Override
     public void draw(Graphics2D g) {

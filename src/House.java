@@ -93,6 +93,23 @@ public class House implements Drawable {
         g.drawLine(ax, ay, cx, cy);
     }
 
+    private void drawAdress(Graphics2D g, int height, int width, int x, int y){
+
+        g.setColor(Color.LIGHT_GRAY);
+        g.fillRect(x + width / 2 + width / 8, y + height / 6, width / 4, height / 8);
+
+        g.setColor(Color.black);
+        g.setStroke(new BasicStroke(1.0f));
+        g.drawRect(x + width / 2 + width / 8, y + height / 6, width / 4, height / 8);
+
+
+        int adressRectCenterX = width / 8;
+        int adressRectCenterY = height / 16;
+        Font newFont = new Font("Arial", Font.BOLD + Font.PLAIN, width / 30);
+        g.setFont(newFont);
+        g.drawString("Улица Лесная", x + width / 2 + width / 7, y + height / 4);
+    }
+
     @Override
     public void draw(Graphics2D g) {
         drawBodyOfHouse(g, height,width,x,y);
@@ -100,5 +117,6 @@ public class House implements Drawable {
         drawDoor(g, height,width,x,y);
         drawChimney(g, height, width,x,y);
         drawRoof(g, height, width, x, y);
+        drawAdress(g, height, width, x, y);
     }
 }
