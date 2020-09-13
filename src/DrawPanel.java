@@ -19,13 +19,13 @@ public class DrawPanel extends JPanel {
         Tree tree = new Tree((Graphics2D) g, 15, getWidth(), getHeight());
         tree.draw((Graphics2D) g);
 
-        Lake lake = new Lake((Graphics2D) g, getWidth() / 4, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
+        Lake lake = new Lake((Graphics2D) g,  getWidth() / 3, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
         lake.draw((Graphics2D) g);
 
         House house = new House((Graphics2D) g,getHeight() / 4,getWidth() / 4,65 * getWidth() / 100,65 * getHeight() / 100);
         house.draw((Graphics2D) g);
 
-        Dog dog = new Dog((Graphics2D) g, 100, 250, getWidth() / 16, 3 * getHeight() / 4);
+        Dog dog = new Dog((Graphics2D) g, getHeight() / 8, getWidth() / 8, getWidth() / 10, 80 * getHeight() / 100);
         dog.draw((Graphics2D) g);
     }
 }

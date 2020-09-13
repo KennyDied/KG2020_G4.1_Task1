@@ -17,18 +17,18 @@ public class Dog implements Drawable {
 
 
     private void drawBodyOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.orange);
+        g.setColor(new Color(210, 105, 30));
         g.fillRect(x + width / 10, y,  3 * width / 4 - width / 10, height / 2);
 
     }
 
     private void drawHeadOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.orange);
+        g.setColor(new Color(210, 105, 30));
         g.fillRect(x + 3 * width / 4, y + height / 12, width / 4, height / 3);
     }
 
     private void drawEyesOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.CYAN);
+        g.setColor(new Color(154, 205, 50));
         g.fillRect(x + 11 * width / 12, y + height / 6, width / 16, height / 16);
         g.fillRect(x + 11 * width / 14, y + height / 6, width / 16, height / 16);
 
@@ -39,29 +39,33 @@ public class Dog implements Drawable {
     }
 
     private void drawMouthOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.DARK_GRAY);
+        g.setColor(new Color(139, 69, 19));
         g.fillRect(x + 5 * width / 6, y + 3 * height / 10, width / 12, height / 16);
     }
 
     private void drawEarsOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.orange);
+        g.setColor(new Color(210, 135, 50));
         g.fillRect(x + 11 * width / 12, y, width / 16, height / 12);
         g.fillRect(x + 11 * width / 14, y, width / 16, height / 12);
     }
 
     private void drawLegsOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.orange);
+        g.setColor(new Color(210, 135, 50));
+        g.fillRect(x + width / 4, y + height / 2, width / 12, 45 * height / 100);
+        g.fillRect(x + 11 * width / 18, y + height / 2, width / 12, 45 * height / 100);
+
+        g.setColor(new Color(210, 105, 30));
         g.fillRect(x + width / 5, y + height / 2, width / 12, height / 2);
         g.fillRect(x + 11 * width / 20, y + height / 2, width / 12, height / 2);
     }
 
     private void drawTailOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.orange);
+        g.setColor(new Color(210, 135, 50));
         g.fillRect(x, y + height / 6, width / 10, height / 6);
     }
 
     private void drawCollarOfDog(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.RED);
+        g.setColor(new Color(255, 20, 147));
         g.setStroke(new BasicStroke(width / 50f));
         g.drawLine(x + 3 * width / 4, y + height / 12, x + 3 * width / 4, y + 5 * height / 12);
     }
