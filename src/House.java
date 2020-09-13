@@ -83,14 +83,12 @@ public class House implements Drawable {
         int ay = y - height / 4;
         int by = y;
         int cy = y;
-        int[] roofX = {ax, bx, cx};
-        int[] roofY = {ay, by, cy};
+        int[] roofX = {x + width / 2, x, x + width};
+        int[] roofY = {y - height / 4, y, y};
         g.fillPolygon(roofX, roofY, 3);
-
         g.setColor(Color.BLACK);
-        g.drawLine(x, y, cx, y);
-        g.drawLine(x, y, ax, ay);
-        g.drawLine(ax, ay, cx, cy);
+
+        g.drawPolygon(roofX, roofY, 3);
     }
 
     private void drawAdress(Graphics2D g, int height, int width, int x, int y){
@@ -101,7 +99,6 @@ public class House implements Drawable {
         g.setColor(Color.black);
         g.setStroke(new BasicStroke(1.0f));
         g.drawRect(x + width / 2 + width / 8, y + height / 6, width / 4, height / 8);
-
 
 //        int adressRectCenterX = width / 8;
 //        int adressRectCenterY = height / 16;

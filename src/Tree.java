@@ -16,7 +16,7 @@ public class Tree implements Drawable {
         int distanceBetweenTrees = width / numOfTree;
 
         for (int i = 0; i < numOfTree; i++) {
-            int randomWidthOfStump = (int)Math.floor((Math.random() * (25 - 10)) + 10);
+            int randomWidthOfStump = (int)Math.floor((Math.random() * (width / 90 - width / 60)) + width / 60);
             int randomHighPosOfStump = (int)Math.floor((Math.random() * ((height / 2) - 65 * height / 100)) + 65 * height / 100);
             int randomLowPosOfStump = (int)Math.floor((Math.random() * ((3 * height / 4) - 7 * height / 10)) + 7 * height / 10);
 

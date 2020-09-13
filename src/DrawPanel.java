@@ -13,19 +13,19 @@ public class DrawPanel extends JPanel {
         World world = new World((Graphics2D) g, getHeight(), getWidth());
         world.draw((Graphics2D) g);
 
-        Sun sun = new Sun((Graphics2D) g, getWidth() / 10, getWidth() / 10, getHeight() / 12, getHeight() / 6, 20, Color.ORANGE);
+        Sun sun = new Sun((Graphics2D) g, getWidth() / 10, getWidth() / 10, getHeight() / 12, getHeight() / 6, 20, Color.YELLOW);
         sun.draw((Graphics2D) g);
 
-        Tree tree = new Tree((Graphics2D) g, 15, getWidth(), getHeight());
+        Tree tree = new Tree((Graphics2D) g, 10, getWidth(), getHeight());
         tree.draw((Graphics2D) g);
 
         Lake lake = new Lake((Graphics2D) g,  getWidth() / 3, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
         lake.draw((Graphics2D) g);
 
-        Fish fish1 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 40 * getWidth() / 100, 85 * getHeight() / 100);
+        Fish fish1 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 40 * getWidth() / 100, 85 * getHeight() / 100, Color.YELLOW);
         fish1.draw((Graphics2D) g);
 
-        Fish fish2 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 85 * getHeight() / 100, 40 * getWidth() / 100);
+        Fish fish2 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 45 * getWidth() / 100,85 * getHeight() / 100, Color.ORANGE);
         fish2.draw((Graphics2D) g);
 
 

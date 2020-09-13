@@ -6,22 +6,24 @@ public class Sun implements Drawable {
     private int r;
     private int raysR;
     private int n;
+    Color c;
 
-    public Sun(Graphics2D g, int x, int y, int r, int raysR, int n, Color orange) {
+    public Sun(Graphics2D g, int x, int y, int r, int raysR, int n, Color c) {
         this.x = x;
         this.y = y;
         this.r = r;
         this.raysR = raysR;
         this.n = n;
+        this.c = c;
     }
 
     private void drawSun(Graphics2D g, int x, int y, int r, int R, int n) {
-        g.setColor(Color.YELLOW);
+        g.setColor(c);
         g.fillOval(x - r, y - r, r + r, r + r);
         double da = 2 * Math.PI / n;
 
-        float[] dashl = {5, 20};
-        BasicStroke pen4 = new BasicStroke(7, BasicStroke.CAP_ROUND, BasicStroke.JOIN_BEVEL, 15, dashl, 0);
+        float[] rays = {5, 20};
+        BasicStroke pen4 = new BasicStroke(r / 10, BasicStroke.CAP_ROUND, BasicStroke.JOIN_BEVEL, 15, rays, 0);
         g.setStroke(pen4);
         for (int i = 0; i < n; i++) {
             double dx1 = r * Math.cos(da * i);

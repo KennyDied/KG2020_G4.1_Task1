@@ -6,16 +6,18 @@ public class Fish implements Drawable {
     int width;
     int x;
     int y;
+    Color c;
 
-    public Fish(Graphics2D g, int height, int width, int x, int y) {
+    public Fish(Graphics2D g, int height, int width, int x, int y, Color c) {
         this.height = height;
         this.width = width;
         this.x = x;
         this.y = y;
+        this.c = c;
     }
 
     private void drawTailOfFish(Graphics2D g, int height, int width, int x, int y) {
-        g.setColor(Color.ORANGE);
+        g.setColor(c);
         g.setStroke(new BasicStroke(1.0f));
 
         int [] fishDotsX = {x, x, x + width / 2, x + width, x + width / 2};
