@@ -25,7 +25,7 @@ public class DrawPanel extends JPanel {
         Fish fish1 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 40 * getWidth() / 100, 85 * getHeight() / 100, Color.YELLOW);
         fish1.draw((Graphics2D) g);
 
-        Fish fish2 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 45 * getWidth() / 100,85 * getHeight() / 100, Color.ORANGE);
+        Fish fish2 = new Fish((Graphics2D) g,  getHeight() / 15, - getWidth() / 30,  getWidth() / 2,85 * getHeight() / 100, Color.ORANGE);
         fish2.draw((Graphics2D) g);
 
 

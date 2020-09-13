@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a079ef43-fd12-4275-a3b3-ee7326bf662f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectsThirdSem/Sun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectsThirdSem/Sun.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lake.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
