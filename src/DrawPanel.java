@@ -22,6 +22,15 @@ public class DrawPanel extends JPanel {
         Lake lake = new Lake((Graphics2D) g,  getWidth() / 3, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
         lake.draw((Graphics2D) g);
 
+        Fish fish1 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 40 * getWidth() / 100, 85 * getHeight() / 100);
+        fish1.draw((Graphics2D) g);
+
+        Fish fish2 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 85 * getHeight() / 100, 40 * getWidth() / 100);
+        fish2.draw((Graphics2D) g);
+
+
+
+
         House house = new House((Graphics2D) g,getHeight() / 4,getWidth() / 4,65 * getWidth() / 100,65 * getHeight() / 100);
         house.draw((Graphics2D) g);
 

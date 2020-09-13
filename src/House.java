@@ -103,8 +103,8 @@ public class House implements Drawable {
         g.drawRect(x + width / 2 + width / 8, y + height / 6, width / 4, height / 8);
 
 
-        int adressRectCenterX = width / 8;
-        int adressRectCenterY = height / 16;
+//        int adressRectCenterX = width / 8;
+//        int adressRectCenterY = height / 16;
         Font newFont = new Font("Arial", Font.BOLD + Font.PLAIN, width / 30);
         g.setFont(newFont);
         g.drawString("Улица Лесная", x + width / 2 + width / 7, y + height / 4);
