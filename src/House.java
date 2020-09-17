@@ -1,13 +1,12 @@
 import java.awt.*;
 
 public class House implements Drawable {
-    Graphics2D g;
-    int height;
-    int width;
-    int x;
-    int y;
+    private int height;
+    private int width;
+    private int x;
+    private int y;
 
-    public House(Graphics2D g, int height, int width, int x, int y) {
+    public House(int height, int width, int x, int y) {
         this.height = height;
         this.width = width;
         this.x = x;
@@ -92,8 +91,6 @@ public class House implements Drawable {
         g.setStroke(new BasicStroke(width / 120));
         g.drawRect(x + width / 2 + width / 8, y + height / 6, width / 4, height / 8);
 
-//        int adressRectCenterX = width / 8;
-//        int adressRectCenterY = height / 16;
         Font newFont = new Font("Arial", Font.BOLD + Font.PLAIN, width / 30);
         g.setFont(newFont);
         g.drawString("Улица Лесная", x + width / 2 + width / 7, y + height / 4);

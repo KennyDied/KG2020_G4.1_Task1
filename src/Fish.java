@@ -1,14 +1,13 @@
 import java.awt.*;
 
 public class Fish implements Drawable {
-    Graphics2D g;
-    int height;
-    int width;
-    int x;
-    int y;
-    Color c;
+    private int height;
+    private int width;
+    private int x;
+    private int y;
+    private Color c;
 
-    public Fish(Graphics2D g, int height, int width, int x, int y, Color c) {
+    public Fish(int height, int width, int x, int y, Color c) {
         this.height = height;
         this.width = width;
         this.x = x;
@@ -56,7 +55,6 @@ public class Fish implements Drawable {
 //            g.fillOval(x + width / 2 + width / 14, y + height / 3, - width / 7, - width / 7);
 //        }
     }
-
 
     @Override
     public void draw(Graphics2D g) {

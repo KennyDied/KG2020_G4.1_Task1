@@ -1,8 +1,8 @@
 import java.awt.*;
 
 public class World implements Drawable{
-    int height;
-    int width;
+    private int height;
+    private int width;
 
     public World(Graphics2D g, int height, int width) {
         this.height = height;

@@ -1,12 +1,12 @@
 import java.awt.*;
 
 public class Lake implements Drawable{
-    int x;
-    int y;
-    int height;
-    int width;
+    private int x;
+    private int y;
+    private int height;
+    private int width;
 
-    public Lake(Graphics2D g, int x, int y, int width, int height) {
+    public Lake(int x, int y, int width, int height) {
         this.x = x;
         this.y = y;
         this.height = height;

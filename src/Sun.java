@@ -8,7 +8,7 @@ public class Sun implements Drawable {
     private int n;
     Color c;
 
-    public Sun(Graphics2D g, int x, int y, int r, int raysR, int n, Color c) {
+    public Sun(int x, int y, int r, int raysR, int n, Color c) {
         this.x = x;
         this.y = y;
         this.r = r;

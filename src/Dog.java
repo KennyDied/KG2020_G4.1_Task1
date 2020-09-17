@@ -1,20 +1,17 @@
 import java.awt.*;
 
 public class Dog implements Drawable {
-    Graphics2D g;
-    int height;
-    int width;
-    int x;
-    int y;
+    private int height;
+    private int width;
+    private int x;
+    private int y;
 
-    public Dog(Graphics2D g, int height, int width, int x, int y) {
-        this.g = g;
+    public Dog(int height, int width, int x, int y) {
         this.height = height;
         this.width = width;
         this.x = x;
         this.y = y;
     }
-
 
     private void drawBodyOfDog(Graphics2D g, int height, int width, int x, int y) {
         g.setColor(new Color(210, 105, 30));

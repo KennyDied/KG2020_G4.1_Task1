@@ -6,7 +6,7 @@ public class Main {
         MainWindow mw = new MainWindow();
         mw.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Dimension sSize = Toolkit.getDefaultToolkit ().getScreenSize ();
-        mw.setSize (sSize);;
+        mw.setSize (sSize);
         mw.setVisible(true);
     }
 }

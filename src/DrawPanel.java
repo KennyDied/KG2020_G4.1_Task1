@@ -10,28 +10,29 @@ public class DrawPanel extends JPanel {
         g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
         g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
 
+
         World world = new World((Graphics2D) g, getHeight(), getWidth());
         world.draw((Graphics2D) g);
 
-        Sun sun = new Sun((Graphics2D) g, getWidth() / 10, getWidth() / 10, getHeight() / 12, getHeight() / 6, 20, Color.YELLOW);
+        Sun sun = new Sun(getWidth() / 10, getWidth() / 10, getHeight() / 12, getHeight() / 6, 20, Color.YELLOW);
         sun.draw((Graphics2D) g);
 
-        Tree tree = new Tree((Graphics2D) g, 10, getWidth(), getHeight());
+        Tree tree = new Tree(10, getWidth(), getHeight());
         tree.draw((Graphics2D) g);
 
-        Lake lake = new Lake((Graphics2D) g,  getWidth() / 3, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
+        Lake lake = new Lake(getWidth() / 3, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
         lake.draw((Graphics2D) g);
 
-        Fish fish1 = new Fish((Graphics2D) g,  getHeight() / 20, getWidth() / 30, 40 * getWidth() / 100, 85 * getHeight() / 100, new Color(255, 228, 225));
+        Fish fish1 = new Fish(getHeight() / 20, getWidth() / 30, 40 * getWidth() / 100, 85 * getHeight() / 100, new Color(255, 228, 225));
         fish1.draw((Graphics2D) g);
 
-        Fish fish2 = new Fish((Graphics2D) g,  getHeight() / 15, - getWidth() / 30,  getWidth() / 2,85 * getHeight() / 100, new Color(245, 177, 23));
+        Fish fish2 = new Fish(getHeight() / 15, - getWidth() / 30,  getWidth() / 2,85 * getHeight() / 100, new Color(245, 177, 23));
         fish2.draw((Graphics2D) g);
 
-        House house = new House((Graphics2D) g,getHeight() / 4,getWidth() / 4,65 * getWidth() / 100,65 * getHeight() / 100);
+        House house = new House(getHeight() / 4,getWidth() / 4,65 * getWidth() / 100,65 * getHeight() / 100);
         house.draw((Graphics2D) g);
 
-        Dog dog = new Dog((Graphics2D) g, getHeight() / 8, getWidth() / 8, getWidth() / 10, 80 * getHeight() / 100);
+        Dog dog = new Dog(getHeight() / 8, getWidth() / 8, getWidth() / 10, 80 * getHeight() / 100);
         dog.draw((Graphics2D) g);
     }
 }

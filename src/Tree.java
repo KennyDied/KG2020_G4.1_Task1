@@ -1,12 +1,11 @@
 import java.awt.*;
 
 public class Tree implements Drawable {
-    Graphics2D g;
     int numOfTree;
     int width;
     int height;
 
-    public Tree(Graphics2D g, int numOfTree, int width, int height) {
+    public Tree(int numOfTree, int width, int height) {
         this.numOfTree = numOfTree;
         this.width = width;
         this.height = height;
