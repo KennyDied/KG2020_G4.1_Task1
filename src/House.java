@@ -15,7 +15,7 @@ public class House implements Drawable {
     }
 
     private void drawBodyOfHouse(Graphics2D g, int height, int width, int x, int y){
-        g.setColor(Color.DARK_GRAY);
+        g.setColor(new Color(238, 130, 98));
         g.fillRect(x, y, width, height);
 
         g.setColor(Color.BLACK);
@@ -26,7 +26,7 @@ public class House implements Drawable {
     }
 
     private void drawWindow(Graphics2D g, int height, int width, int x, int y){
-        g.setColor(Color.CYAN);
+        g.setColor(new Color(224, 255, 255));
         int windX = x + width / 6;
         int windY = y + height / 6;
         int windHeight = height / 2;
@@ -45,7 +45,7 @@ public class House implements Drawable {
     }
 
     private void drawDoor(Graphics2D g, int height, int width, int x, int y){
-        g.setColor(Color.PINK);
+        g.setColor(new Color(197, 130, 45));
         g.setStroke(new BasicStroke(width / 100));
         int doorX = x + width / 2 + width / 8;
         int doorY = y + height / 3;
@@ -57,7 +57,7 @@ public class House implements Drawable {
         g.setStroke(new BasicStroke(width / 120));
         g.drawRect(doorX, doorY, doorWidth, doorHeight);
 
-        g.setColor(Color.MAGENTA);
+        g.setColor(new Color(238, 220, 130));
         g.fillOval(doorX + doorWidth / 8, doorY + doorHeight / 2, doorWidth / 8,doorWidth / 8);
         g.setColor(Color.BLACK);
         g.setStroke(new BasicStroke(width / 130));
@@ -65,7 +65,7 @@ public class House implements Drawable {
     }
 
     private void drawChimney(Graphics2D g, int height, int width, int x, int y){
-        g.setColor(Color.ORANGE);
+        g.setColor(new Color(205, 85, 85));
         g.fillRect(x + 3 * width / 4, y - height / 4, width / 6, height / 4);
 
         g.setStroke(new BasicStroke(width / 100));
@@ -74,7 +74,7 @@ public class House implements Drawable {
     }
 
     private void drawRoof(Graphics2D g, int height, int width, int x, int y){
-        g.setColor(Color.PINK);
+        g.setColor(new Color(205, 38, 38));
         g.setStroke(new BasicStroke(width / 80));
         int[] roofX = {x + width / 2, x, x + width};
         int[] roofY = {y - height / 4, y, y};
@@ -85,7 +85,7 @@ public class House implements Drawable {
 
     private void drawAddress(Graphics2D g, int height, int width, int x, int y){
 
-        g.setColor(Color.LIGHT_GRAY);
+        g.setColor(new Color(98, 157, 217));
         g.fillRect(x + width / 2 + width / 8, y + height / 6, width / 4, height / 8);
 
         g.setColor(Color.BLACK);

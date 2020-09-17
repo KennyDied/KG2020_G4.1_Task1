@@ -14,11 +14,11 @@ public class Lake implements Drawable{
     }
 
     private void drawLake(Graphics2D g, int x, int y, int width, int height){
-        g.setStroke(new BasicStroke(width / 130));
-        g.setColor(Color.BLACK);
+        g.setStroke(new BasicStroke(width / 110));
+        g.setColor(new Color(70, 130, 180));
         g.drawOval(x, y, width, height);
 
-        g.setColor(Color.BLUE);
+        g.setColor(new Color(0, 206,209));
         g.fillOval(x, y, width, height);
     }
 
