@@ -1,7 +1,22 @@
 import javax.swing.JPanel;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class DrawPanel extends JPanel {
+
+    World world = new World(1, 1);
+    Sun sun = new Sun(0.1, 0.1, 0.0833, 0.167, 20, Color.YELLOW);
+    Lake lake = new Lake(0.33, 0.8, 0.125, 0.25);
+//    Lake lake = new Lake(getWidth() / 3, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
+    ArrayList<Tree> trees = RandomTree.Trees(10);
+
+    Fish fish1 = new Fish(0.05, 0.033, 0.4, 0.85, new Color(255, 228, 225));
+    Fish fish2 = new Fish(0.067, -0.033,  0.5,0.85, new Color(245, 177, 23));
+    //Fish fish2 = new Fish(getHeight() / 15, - getWidth() / 30,  getWidth() / 2,85 * getHeight() / 100, new Color(245, 177, 23));
+    House house = new House(0.25,0.25,0.65,0.65);
+    Dog dog = new Dog(0.125, 0.125, 0.1, 0.8);
+
+
     @Override
     public void paint(Graphics g) {
         super.paint(g);
@@ -11,28 +26,22 @@ public class DrawPanel extends JPanel {
         g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
 
 
-        World world = new World((Graphics2D) g, getHeight(), getWidth());
-        world.draw((Graphics2D) g);
 
-        Sun sun = new Sun(getWidth() / 10, getWidth() / 10, getHeight() / 12, getHeight() / 6, 20, Color.YELLOW);
-        sun.draw((Graphics2D) g);
+        world.draw((Graphics2D) g, getHeight(), getWidth());
 
-        Tree tree = new Tree(10, getWidth(), getHeight());
-        tree.draw((Graphics2D) g);
+        sun.draw((Graphics2D) g, getHeight(), getWidth());
 
-        Lake lake = new Lake(getWidth() / 3, 80 * getHeight() / 100, getWidth() / 4, getHeight() /8);
-        lake.draw((Graphics2D) g);
+        for (Tree t : trees) {
+            t.draw((Graphics2D) g, getWidth(), getHeight());
+        }
+        lake.draw((Graphics2D) g, getHeight(), getWidth());
 
-        Fish fish1 = new Fish(getHeight() / 20, getWidth() / 30, 40 * getWidth() / 100, 85 * getHeight() / 100, new Color(255, 228, 225));
-        fish1.draw((Graphics2D) g);
+        fish1.draw((Graphics2D) g, getHeight(), getWidth());
 
-        Fish fish2 = new Fish(getHeight() / 15, - getWidth() / 30,  getWidth() / 2,85 * getHeight() / 100, new Color(245, 177, 23));
-        fish2.draw((Graphics2D) g);
+        fish2.draw((Graphics2D) g, getHeight(), getWidth());
 
-        House house = new House(getHeight() / 4,getWidth() / 4,65 * getWidth() / 100,65 * getHeight() / 100);
-        house.draw((Graphics2D) g);
+        house.draw((Graphics2D) g, getHeight(), getWidth());
 
-        Dog dog = new Dog(getHeight() / 8, getWidth() / 8, getWidth() / 10, 80 * getHeight() / 100);
-        dog.draw((Graphics2D) g);
+        dog.draw((Graphics2D) g, getHeight(), getWidth());
     }
 }

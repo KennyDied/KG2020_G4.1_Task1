@@ -1,42 +1,36 @@
 import java.awt.*;
 
 public class Tree implements Drawable {
-    int numOfTree;
-    int width;
-    int height;
+    double width, height, x, y;
+    double widthOfStump, heightOfLeaves;
+    Color[] c;
 
-    public Tree(int numOfTree, int width, int height) {
-        this.numOfTree = numOfTree;
+
+    public Tree(double width, double height, double x, double y, double widthOfStump, double heightOfLeaves, Color[] c) {
         this.width = width;
         this.height = height;
+        this.x = x;
+        this.y = y;
+        this.widthOfStump = widthOfStump;
+        this.heightOfLeaves = heightOfLeaves;
+        this.c = c;
     }
 
-    private void drawTree (Graphics2D g, int numOfTree, int width, int height){
-        int distanceBetweenTrees = width / numOfTree;
-        for (int i = 0; i < numOfTree; i++) {
-            int randomWidthOfStump = Generator.rndNumberInRange(width / 90, width /60);
-            int randomHighPosOfStump = Generator.rndNumberInRange(height / 2, 65 * height / 100);
-            int randomLowPosOfStump = Generator.rndNumberInRange(3 * height / 4, 7 * height / 10);
+    private void drawStamp(Graphics2D g, double heightOfLeaves, double height, double x, double y, double widthOfStump, Color[] c){
+        g.setColor(c[0]);
+        g.setStroke(new BasicStroke((int)(widthOfStump)));
+        int hOfStump = (int)(height - heightOfLeaves);
+        g.drawLine((int)x, (int)y, (int)x, (int)(y - hOfStump));
+    }
 
-            int randomLeavesColorR = Generator.rndNumberInRange(0, 205);
-            int randomLeavesColorG = 255;
-            int randomLeavesColorB = Generator.rndNumberInRange(0, 140);
-
-            int randomStumpColorR = 255;
-            int randomStumpColorG = Generator.rndNumberInRange(0, 150);
-            int randomStumpColorB = Generator.rndNumberInRange(0, 1);
-
-            g.setColor(new Color(randomStumpColorR, randomStumpColorG, randomStumpColorB));
-            g.setStroke(new BasicStroke(randomWidthOfStump));
-            g.drawLine(distanceBetweenTrees * i + width / 40, randomHighPosOfStump, distanceBetweenTrees * i + width / 40,  randomLowPosOfStump);
-
-            g.setColor(new Color(randomLeavesColorR, randomLeavesColorG, randomLeavesColorB));
-            g.fillOval(distanceBetweenTrees * i + width / 40 - 5 * randomWidthOfStump / 2, randomHighPosOfStump - 7 * randomWidthOfStump / 2, randomWidthOfStump * 5, randomWidthOfStump * 7);
-        }
+    private void drawLeaves(Graphics2D g, double width, double height, double x, double y, double heightOfLeaves, Color[] c){
+        g.setColor(c[1]);
+        g.fillOval((int)(x - width / 2), (int)(y - height), (int)width, (int)heightOfLeaves);
     }
 
     @Override
-    public void draw(Graphics2D g) {
-        drawTree(g, numOfTree, width, height);
+    public void draw(Graphics2D g, int widthOfScreen, int heightOfScreen) {
+        drawStamp(g,heightOfLeaves * heightOfScreen, height * heightOfScreen, x * widthOfScreen, y * heightOfScreen, widthOfStump * widthOfScreen, c);
+        drawLeaves(g,width * widthOfScreen, height * heightOfScreen, x * widthOfScreen, y * heightOfScreen, heightOfLeaves * heightOfScreen, c);
     }
 }
