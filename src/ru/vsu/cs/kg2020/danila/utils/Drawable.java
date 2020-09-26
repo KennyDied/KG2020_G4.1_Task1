@@ -1,3 +1,5 @@
+package ru.vsu.cs.kg2020.danila.utils;
+
 import java.awt.*;
 
 public interface Drawable {

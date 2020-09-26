@@ -1,6 +1,10 @@
+package ru.vsu.cs.kg2020.danila.objects_on_picture;
+
+import ru.vsu.cs.kg2020.danila.utils.Drawable;
+
 import java.awt.*;
 
-public class Lake implements Drawable{
+public class Lake implements Drawable {
     private double x;
     private double y;
     private double height;

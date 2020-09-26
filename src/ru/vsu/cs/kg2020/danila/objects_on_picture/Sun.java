@@ -1,3 +1,7 @@
+package ru.vsu.cs.kg2020.danila.objects_on_picture;
+
+import ru.vsu.cs.kg2020.danila.utils.Drawable;
+
 import java.awt.*;
 
 public class Sun implements Drawable {

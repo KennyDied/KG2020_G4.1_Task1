@@ -21,11 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a079ef43-fd12-4275-a3b3-ee7326bf662f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_picture.png" beforeDir="false" afterPath="$PROJECT_DIR$/final_picture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectsThirdSem/Drawable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectsThirdSem/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectsThirdSem/Sun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/utils/DrawPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/utils/Drawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/Fish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/Lake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/utils/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/RandomTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/Sun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/objects_on_picture/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,13 +63,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KG2020_G41_Task2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Данила\Searches\Desktop\KG2020_G41_Task1\src" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ObjectsOnPicture" />
     </key>
@@ -78,7 +91,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.kg2020.danila.Main" />
       <module name="ProjectsThirdSem" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />

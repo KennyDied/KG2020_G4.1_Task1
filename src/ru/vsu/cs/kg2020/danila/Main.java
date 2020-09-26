@@ -1,3 +1,7 @@
+package ru.vsu.cs.kg2020.danila;
+
+import ru.vsu.cs.kg2020.danila.utils.MainWindow;
+
 import javax.swing.*;
 import java.awt.*;
 

@@ -1,3 +1,5 @@
+package ru.vsu.cs.kg2020.danila.objects_on_picture;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
