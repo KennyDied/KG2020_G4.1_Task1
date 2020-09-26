@@ -8,18 +8,13 @@ public  class RandomTree {
         ArrayList<Tree> arrayOfTree = new ArrayList<>();
 
         for (int i = 0; i < numOfTrees; i++) {
-            double h = rndDoubleNumberInRange(0.25, 0.5);
-
+            double randomWidthOfStump = rndDoubleNumberInRange(0.011, 0.0167);
+            double heightOfLeaves = rndDoubleNumberInRange(0.142, 0.39);
             double distanceBetweenTrees = (10 / numOfTrees) * 0.1;
 
-
             double y = rndDoubleNumberInRange(0.7, 0.75);
-            double randomWidthOfStump = rndDoubleNumberInRange(0.011, 0.0167);
-
+            double h = rndDoubleNumberInRange(0.25, 0.5);
             double w = rndDoubleNumberInRange(0.2, distanceBetweenTrees);
-
-
-            double heightOfLeaves = rndDoubleNumberInRange(0.142, 0.39);
 
             int randomStumpColorR = 255;
             int randomStumpColorG = rndNumberInRange(0, 150);
@@ -29,13 +24,10 @@ public  class RandomTree {
             int randomLeavesColorG = 255;
             int randomLeavesColorB = rndNumberInRange(0, 140);
 
-
             Color c[] = {new Color(randomStumpColorR, randomStumpColorG, randomStumpColorB), new Color(randomLeavesColorR, randomLeavesColorG, randomLeavesColorB)};
-
 
             arrayOfTree.add(new Tree(w, h, distanceBetweenTrees * i + 0.025, y, randomWidthOfStump, heightOfLeaves, c));
         }
-
         return arrayOfTree;
     }
 

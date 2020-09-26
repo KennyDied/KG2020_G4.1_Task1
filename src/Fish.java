@@ -39,21 +39,6 @@ public class Fish implements Drawable {
             g.drawOval((int)(x + width / 2 + width / 10), (int)(y + height / 2 + width / 5), (int)(- width / 5), (int)(- width / 5));
             g.fillOval((int)(x + width / 2 + width / 10), (int)(y + height / 2 + width / 5), (int)(- width / 5), (int)(- width / 8));
         }
-//        if (width > 0) {
-//            g.fillOval(x + width / 2, y + height / 3, width / 5, width / 5);
-//
-//            g.setColor(Color.BLACK);
-//            g.drawOval(x + width / 2, y + height / 3, width / 5, width / 5);
-//            g.fillOval(x + width / 2 + width / 14, y + height / 3, width / 7, width / 7);
-//        }
-//        else {
-//            g.setColor(Color.WHITE);
-//            g.fillOval(x + width / 2, y + height / 3, - width / 5, - width / 5);
-//ы
-//            g.setColor(Color.BLACK);
-//            g.drawOval(x + width / 2, y + height / 3, - width / 5, - width / 5);
-//            g.fillOval(x + width / 2 + width / 14, y + height / 3, - width / 7, - width / 7);
-//        }
     }
 
     @Override

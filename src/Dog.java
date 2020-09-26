@@ -24,23 +24,13 @@ public class Dog implements Drawable {
     }
 
     private void drawEyesOfDog(Graphics2D g, double height, double width, double x, double y) {
-        g.setColor(new Color(154, 205, 50));
-
+        g.setColor(Color.WHITE);
         for (int j = 0; j < 2; j++) {
             for (int i = 0; i < 2; i++) {
                 g.fillRect((int)(x + 11 * width / (12 + 2 * i)), (int)(y + height / 6), (int)(width / 16), (int)(height / (16 + 10 * j)));
             }
-            g.setColor(Color.WHITE);
+            g.setColor(new Color(154, 205, 50));
         }
-
-
-//        g.fillRect(x + 11 * width / 12, y + height / 6, width / 16, height / 16);
-//        g.fillRect(x + 11 * width / 14, y + height / 6, width / 16, height / 16);
-//
-//        g.setColor(Color.WHITE);
-//        g.fillRect(x + 11 * width / 12, y + height / 6, width / 26, height / 26);
-//        g.fillRect(x + 11 * width / 14, y + height / 6, width / 26, height / 26);
-
     }
 
     private void drawMouthOfDog(Graphics2D g, double height, double width, double x, double y) {
